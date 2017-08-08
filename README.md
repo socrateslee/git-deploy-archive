@@ -12,6 +12,7 @@ sudo chmod +x `git --exec-path`/git-deploy-archive
 
 ```
 git deploy-archive
+git deploy-archive --cfg <config-file>
 ```
 
 ## .git-deploy-archive file
