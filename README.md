@@ -16,7 +16,7 @@ git deploy-archive --cfg <config-file>
 ```
 
 ## .git-deploy-archive file
-.git-deploy-archive file is a simple configuration file, each line of the file contains 1) remote repo address, 2) treeish, 3) file or directory path to extract, 4) optional path prefix for content extracted, 4) optional renamed prefix for content extracted. A sample file is as below:
+.git-deploy-archive file is a simple configuration file, each line of the file contains 1) remote repo address, 2) treeish, 3) file or directory path to extract, 4) optional local path prefix for content extracted. A sample file is as below:
 
 ```
 # basic
@@ -29,4 +29,7 @@ git@your-repo.com:conf tag_1.2.0 config.json config
 git@your-repo.com:frontend master static/dist static_files dist
 ```
 
-__NOTE__, [github doesn't support git archive](http://www.gilesorr.com/blog/git-archive-github.html), you should use your own ssh based git server.
+__NOTE__
+
+- [github doesn't support git archive](http://www.gilesorr.com/blog/git-archive-github.html)
+- gitlab(ssh address) do support git archive.
